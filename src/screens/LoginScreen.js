@@ -41,7 +41,7 @@ export default function LoginScreen({ navigation }) {
           onChangeText={setPassword}
         />
 
-        <TouchableOpacity style={styles.button} onPress={() => { }}>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Home')}>
           <Text style={styles.buttonText}>Login</Text>
         </TouchableOpacity>
 
@@ -89,15 +89,14 @@ const styles = StyleSheet.create({
     color: 'white',
     marginBottom: 12,
     paddingHorizontal: 10,
-     borderRadius: 10
+    borderRadius: 10
   },
   button: {
-    backgroundColor: '#228B22',
-    padding: 12,
-    borderRadius: 8,
+    backgroundColor: '#2e7d32', padding: 12,
+    borderRadius: 30,
     marginTop: 10
   },
-    secondaryButton: {
+  secondaryButton: {
     backgroundColor: 'rgba(23, 41, 206, 0.8)',
   },
   clearButton: {
@@ -106,7 +105,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: 'white',
     textAlign: 'center',
-    fontWeight: 'bold'
+    fontWeight: '700'
   },
   row: {
     flexDirection: 'row',
