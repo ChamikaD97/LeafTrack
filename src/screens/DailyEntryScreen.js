@@ -80,9 +80,7 @@ Toast.show({
 };
 
 
-  
     const clearInputs = () => {
-        
         setB('');
         setBB('');
         setP('');
